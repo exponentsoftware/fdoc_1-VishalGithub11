@@ -1,9 +1,16 @@
-const sentence = `I am a teacher and I love teaching. There is nothing as more rewarding as educating and empowering people. I found teaching more interesting than any other jobs. Does this motivate you to be a teacher?`;
-console.log(countWords(sentence));
-31;
+const arrOne = [1, 4, 6, 2, 1];
+console.log(checkUniqueness(arrOne));
 
-const countWords = (para) => {
-  console.log("length", para.length);
-};
+const arrTwo = [1, 4, 6, 2, 3];
+console.log(checkUniqueness(arrTwo));
 
-countWords(sentence);
+function checkUniqueness(arr) {
+  const check = arr.filter((num, pos, array) => {
+    return array.indexOf(num) !== pos;
+  });
+  if (check.length > 0) {
+    return false;
+  } else {
+    return true;
+  }
+}
