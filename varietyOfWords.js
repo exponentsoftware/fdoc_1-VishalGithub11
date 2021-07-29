@@ -4,7 +4,9 @@ const varietyOfWords = (para) => {
   const words = para
     .split(" ")
     .filter((word) => word.length > 1)
-    .filter((word, pos, self) => self.indexOf(word) == pos);
+    .filter((word, pos, self) => {
+      return self.indexOf(word) == pos;
+    });
   console.log(words.length);
 };
 
