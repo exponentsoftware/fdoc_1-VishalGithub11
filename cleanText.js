@@ -2,8 +2,8 @@ const sentence = `%I$&# $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $
 //     console.log(cleanText(sentence));
 // `I am a teacher and I love teaching. There is nothing as more rewarding as educating and empowering people. I found teaching more interesting than any other jobs. Does this motivate you to be a teacher?`
 
-const cleanText = (sentence) => {
-  console.log(sentence.replace(/["%""#""&""$""@"";""?""!"]/g, ""));
+const cleanText = (para) => {
+  console.log(para.replace(/["%""#""&""$""@"";""?""!"]/g, ""));
 };
 
 cleanText(sentence);
